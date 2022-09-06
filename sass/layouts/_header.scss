@@ -1,9 +1,6 @@
 .header {
   display: flex;
-  border-bottom: 1px solid #ececec;
-  &-list {
-    display: flex;
-  }
+  border-bottom: 1px solid #ececec;  
   &-item {
     display: flex;
     align-items: center;
@@ -33,14 +30,22 @@
   
 }
 
+.navigation__list {
+  display: flex;
+}
+
+.header__logo {
+  margin-right: 93px;
+}
+
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
-  margin-right: 93px;
-}
+} 
+  
 .black {
   color: #000000;
 }
@@ -52,10 +57,10 @@
 }
 
 
-.header-list li {
+.navigation__list li {
   margin-right: 50px;
 }
-.header-list .item:last-child {
+.navigation__list .item:last-child {
   margin-right: 0;
 }
 
@@ -72,20 +77,21 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  &-link {
-    position: relative;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    color: var(--primary-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-  
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+}
+
+.navigation__link {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -105,8 +111,8 @@
 
 
 
-.list-link:hover,
-.list-link:focus,
+.navigation__link:hover,
+.navigation__link:focus,
 .header-connect:hover,
 .header-connect:focus,
 .header-connect:hover .contacts-icon,

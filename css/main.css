@@ -68,9 +68,6 @@ h2 {
   display: flex;
   border-bottom: 1px solid #ececec;
 }
-.header-list {
-  display: flex;
-}
 .header-item {
   display: flex;
   align-items: center;
@@ -96,13 +93,20 @@ h2 {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.navigation__list {
+  display: flex;
+}
+
+.header__logo {
+  margin-right: 93px;
+}
+
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
-  margin-right: 93px;
 }
 
 .black {
@@ -117,11 +121,11 @@ h2 {
   color: var(--accent-color);
 }
 
-.header-list li {
+.navigation__list li {
   margin-right: 50px;
 }
 
-.header-list .item:last-child {
+.navigation__list .item:last-child {
   margin-right: 0;
 }
 
@@ -136,7 +140,8 @@ h2 {
   padding: 0;
   margin: 0;
 }
-.list-link {
+
+.navigation__link {
   position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -161,8 +166,8 @@ h2 {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list-link:hover,
-.list-link:focus,
+.navigation__link:hover,
+.navigation__link:focus,
 .header-connect:hover,
 .header-connect:focus,
 .header-connect:hover .contacts-icon,
