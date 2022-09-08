@@ -14,12 +14,15 @@
   &-wrap {
     min-width: 1170px;
   }
-  &-list {
-    display: flex;
-    column-gap: 30px;
-    justify-content: center;
-  }
-  &-member {
+  
+  
+}
+
+.card {
+  display: flex;
+  column-gap: 30px;
+  justify-content: center;
+  &-picture {
     width: calc((100% - 90px) / 4);
     text-align: center;
     background-color: #ffffff;
@@ -38,38 +41,20 @@
     line-height: 1.2;
     margin-bottom: 16px;
   }
-  &-soc {
-    display: flex;
-    column-gap: 10px;
-    justify-content: center;
+  &-wrap {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 
-.member-wrap {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
 
-.soc-link {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &-icon {
-    fill: #afb1b8;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &:hover,
-  &:focus {
+.sosials-link:hover,
+  .sosials-link:focus {
   background-color: var(--accent-color);
 }
-}
 
-.soc-link:hover .soc-link-icon,
-.soc-link:focus .soc-link-icon {
+.sosials-link:hover .sosials-icon,
+.sosials-link:focus .sosials-icon {
   fill: var(--white-color);
 }

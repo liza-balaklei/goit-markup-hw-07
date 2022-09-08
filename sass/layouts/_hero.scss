@@ -11,6 +11,12 @@
   background-position: center;
   background-size: cover;
   &-item {
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__item {
     color: var(--white-color);
     font-weight: 900;
     font-size: 44px;
@@ -19,24 +25,25 @@
     text-transform: uppercase;
   
     max-width: 696px;
-    margin-top: 0;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  &-btn {
-    padding: 10px 32px;
-    border-radius: 4px;
-    min-width: 216px;
-    text-align: center;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-color: transparent;
-  }
+    }
+    &__btn {
+      padding: 10px 32px;
+      border-radius: 4px;
+      min-width: 216px;
+      text-align: center;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-color: transparent;
+    }
+    &-wrap {
+      text-align: center;
+    }
 }
 
-.container.hero-wrap {
-  text-align: center;
-}
+
+  
+
+
+
 
 
 
