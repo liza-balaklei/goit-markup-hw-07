@@ -46,6 +46,7 @@ h2 {
   list-style: none;
   padding-left: 0;
   padding-right: 0;
+  display: flex;
 }
 
 .container {
@@ -78,25 +79,43 @@ h2 {
   color: #000000;
 }
 
-.sosials {
-  display: flex;
+.socials {
   -moz-column-gap: 10px;
        column-gap: 10px;
   justify-content: center;
 }
-
-.sosials-link {
+.socials-link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.socials-link:hover, .socials-link:focus {
+  background-color: var(--accent-color);
+}
+.socials-link {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.sosials-icon {
+.socials-link:hover .socials-icon,
+.socials-link:focus .socials-icon {
+  fill: var(--white-color);
+}
+
+.socials-link-dark {
+  background: rgba(255, 255, 255, 0.1);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.soc-link-icon--fill-dark {
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.soc-link-icon--fill-light {
+  fill: var(--white-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -764,12 +783,6 @@ h2 {
   gap: 70px;
 }
 
-.socials {
-  display: flex;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-}
-
 .social-title {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -778,33 +791,6 @@ h2 {
   display: flex;
   margin-bottom: 20px;
   text-transform: uppercase;
-}
-
-.socials-link {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: gray;
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.socials-icon {
-  fill: var(--white-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.socials-link:hover,
-.socials-link:focus {
-  background-color: var(--accent-color);
-}
-
-.socials-link:hover .socials-icon,
-.socials-link:focus .socials-icon {
-  fill: var(--white-color);
 }
 
 .online-title {
