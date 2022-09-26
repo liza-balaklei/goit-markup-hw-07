@@ -1,4 +1,4 @@
-.modal-title {
+  .modal-title {
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
@@ -12,6 +12,7 @@
   
   .input-wrap {
     position: relative;
+    margin-bottom: 10px;
   }
   
   .form-input {
@@ -50,9 +51,6 @@
     margin-bottom: 4px;
   }
 
-  .input-wrap {
-    margin-bottom: 10px;
-  }
   
   .modal-text {
     display: block;
